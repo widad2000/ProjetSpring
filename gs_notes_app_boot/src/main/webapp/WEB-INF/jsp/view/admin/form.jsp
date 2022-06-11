@@ -1,4 +1,4 @@
-<%@page import="com.ensah.core.web.models.PersonModel"%>
+<%@page import="com.gsnotes.web.models.PersonModel"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>

@@ -21,22 +21,11 @@
 
 
 
-
-
-	<div>
-		<h3>Cadre Admin home page</h3>
-		<p>Hello and welcome to your application</p>
-
-		<s:authorize access="isAuthenticated()">
-    			You are connected with: 
-    			 <s:authentication property="principal.username" /> <br>
-			Your Email : <s:authentication property="principal.email" /><br>
-			Your First Name : <s:authentication property="principal.firstName" /><br>
-			Your Last name : <s:authentication property="principal.LastName" /><br>
-		</s:authorize>
-	</div>
-
-
+<form method="post" enctype="multipart/form-data" action="/Inscription/excelimport">
+<input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" name="file">
+<br>
+<input type="submit" value="Import">
+</form>
 
 <jsp:include page="../fragments/userfooter.jsp" />
 
